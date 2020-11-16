@@ -34,6 +34,7 @@ then # if/then branch
          echo 'varnish port is correct'
 echo $num
  else # else branch
+ echo $num
            echo 'varnish port is not correct it should be 8081'
    fi
 
