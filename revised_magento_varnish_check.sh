@@ -9,8 +9,9 @@ echo
 echo "*********************varnish status check*********************"
 echo
 if [[ $varnish_status -eq 2 ]]
-then tput setaf 2; echo 'Caching Application is selected as varnish'
-else tput setaf 1; echo 'Magneto built in cache is selected, varnish is not working. To enable varnish go to the Magento admin > stores > configuration > advanced > Full page caching'
+then tput setaf 2; echo "Caching Application is selected as varnish"
+else tput setaf 1; echo "Magneto built in cache is selected, varnish is not working. To enable varnish go to the Magento admin > stores > configuration 
+> advanced > Full page caching"
 
 fi
 
