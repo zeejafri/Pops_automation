@@ -37,10 +37,10 @@ echo "###################################"
 num=`php bin/magento config:show | grep -a "system/full_page_cache/varnish/backend_port" | cut -d " " -f 3`
 if [[ $num -eq 8081 ]]
 then # if/then branch
-         echo 'varnish port is correct'
-echo $num
+         echo 'backend port is correct'
+echo selected bcakend port: $num
  else # else branch
- echo $num
+ echo selected bcakend port: $num
            echo 'varnish port is not correct it should be 8081 - Backend Port is the port of the Apache server, as varnish uses the concept of backend servers whose content it accelerates'
    fi
 
