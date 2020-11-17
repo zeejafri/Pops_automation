@@ -6,11 +6,11 @@ access_list=`php bin/magento config:show | grep -a "system/full_page_cache/varni
 backend_host=`php bin/magento config:show | grep -a "system/full_page_cache/varnish/backend_host"`
 echo
 echo
-echo "*********************varnish status check*********************"
+tput setaf 2; echo "*********************varnish status check*********************"
 echo
 if [[ $varnish_status -eq 2 ]]
-then tput setaf 2; echo "Caching Application is selected as varnish"
-else tput setaf 1; echo "Magneto built in cache is selected, varnish is not working. To enable varnish go to the Magento admin > stores > configuration 
+then  echo "Caching Application is selected as varnish"
+else  echo "Magneto built in cache is selected, varnish is not working. To enable varnish go to the Magento admin > stores > configuration 
 > advanced > Full page caching"
 
 fi
