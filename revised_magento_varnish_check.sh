@@ -20,7 +20,8 @@ echo "####################################"
 echo These are backend host URLs 
 echo $backend_host
 echo
-echo "Backend Hosts: Varnish has a concept of “backend” or “origin” servers. A backend server is the server providing the content Varnish will accelerate. More reading: https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html" 
+echo "Backend Hosts: Varnish has a concept of “backend” or “origin” servers. A backend server is the server providing the content Varnish will accelerate." 
+echo "More reading: https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html" 
 echo
 echo "####################################"
 echo
