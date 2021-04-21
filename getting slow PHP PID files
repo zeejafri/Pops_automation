@@ -1,0 +1,9 @@
+#!/bin/bash
+
+grep -a slow /var/log/php7.*-fpm.log | awk '{print $1,$2,$5,$6,$7,$8,$9}' | cut -d , -f1 | awk '{print $5}'
+
+
+echo -n "enter the pid number for slow PHP logs : "
+read my_var
+
+echo "The value is : $my_var"
